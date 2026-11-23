@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Questions & workflow fit"
+    url: "https://github.com/HyVoid/business-decision-toolbox/discussions/categories/questions"
+    about: "Ask about bid evaluation workflows, BOQ inputs, normalization rules, and interpreting commercial risk flags."
+  - name: "Ideas & feature requests"
+    url: "https://github.com/HyVoid/business-decision-toolbox/discussions/categories/ideas"
+    about: "Suggest additional tender scenarios, bid comparison checks, procurement controls, or reporting improvements."
+  - name: "Product updates"
+    url: "https://github.com/HyVoid/business-decision-toolbox/discussions/categories/product-updates"
+    about: "Follow product maintenance notes and meaningful improvements."
