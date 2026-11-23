@@ -1,0 +1,147 @@
+import type { BoqLineItem, GlobalParameters } from './types';
+
+export const DEFAULT_PARAMETERS: GlobalParameters = {
+  currencySymbol: '$',
+  plugRateMode: 'Benchmark Rate',
+  penaltyUpliftPct: 0.0,
+  unbalancedThresholdPct: 25.0,
+  budgetOverrunThresholdPct: 5.0,
+  bidderAName: 'Subcontractor A (Apex Civil)',
+  bidderBName: 'Subcontractor B (Meridian Build)',
+  bidderCName: 'Subcontractor C (Crestline Eng.)',
+};
+
+export const DEFAULT_BOQ_ITEMS: BoqLineItem[] = [
+  {
+    id: 'boq-01',
+    boqCode: '010101001',
+    itemName: 'Deep Excavation & Rock Breaking (Variation-Prone)',
+    unit: 'm³',
+    quantity: 1200,
+    benchmarkUnitRate: 85.0,
+    bidderARawRate: 118.0, // +38.8% Red Flag
+    bidderBRawRate: 82.5,
+    bidderCRawRate: 88.0,
+  },
+  {
+    id: 'boq-02',
+    boqCode: '010401001',
+    itemName: 'Basement SBS Modified Bitumen Waterproofing (4mm)',
+    unit: 'm²',
+    quantity: 3500,
+    benchmarkUnitRate: 38.0,
+    bidderARawRate: null, // Omitted ($133,000 hidden)
+    bidderBRawRate: 36.5,
+    bidderCRawRate: 39.0,
+  },
+  {
+    id: 'boq-03',
+    boqCode: '010502003',
+    itemName: 'Cast-in-Place Structural Concrete Grade C40',
+    unit: 'm³',
+    quantity: 1850,
+    benchmarkUnitRate: 145.0,
+    bidderARawRate: 188.5, // +30.0% Red Flag
+    bidderBRawRate: 141.0,
+    bidderCRawRate: 142.0,
+  },
+  {
+    id: 'boq-04',
+    boqCode: '010515001',
+    itemName: 'High-Tensile Structural Rebar Supply & Fix (HRB400)',
+    unit: 't',
+    quantity: 220,
+    benchmarkUnitRate: 920.0,
+    bidderARawRate: 1240.0, // +34.8% Red Flag
+    bidderBRawRate: 895.0,
+    bidderCRawRate: 905.0,
+  },
+  {
+    id: 'boq-05',
+    boqCode: '010601002',
+    itemName: 'Structural Steel Roof Trusses & Corrosion Coating',
+    unit: 't',
+    quantity: 65,
+    benchmarkUnitRate: 2450.0,
+    bidderARawRate: 2320.0,
+    bidderBRawRate: 2410.0,
+    bidderCRawRate: 2420.0,
+  },
+  {
+    id: 'boq-06',
+    boqCode: '010801004',
+    itemName: 'Unitized Double-Glazed Aluminum Curtain Wall',
+    unit: 'm²',
+    quantity: 950,
+    benchmarkUnitRate: 260.0,
+    bidderARawRate: 252.0,
+    bidderBRawRate: 254.0,
+    bidderCRawRate: 342.0, // +31.5% Red Flag
+  },
+  {
+    id: 'boq-07',
+    boqCode: '010902001',
+    itemName: 'Acoustic Mineral Fiber Ceiling Grid & Panels',
+    unit: 'm²',
+    quantity: 2600,
+    benchmarkUnitRate: 28.0,
+    bidderARawRate: 26.5,
+    bidderBRawRate: 27.5,
+    bidderCRawRate: 29.0,
+  },
+  {
+    id: 'boq-08',
+    boqCode: '011003002',
+    itemName: 'Chilled Water Pipework & Elastomeric Insulation',
+    unit: 'm',
+    quantity: 840,
+    benchmarkUnitRate: 64.0,
+    bidderARawRate: 61.0,
+    bidderBRawRate: 63.0,
+    bidderCRawRate: 86.5, // +35.2% Red Flag
+  },
+  {
+    id: 'boq-09',
+    boqCode: '011201005',
+    itemName: 'Firestopping & MEP Penetration Sealing System',
+    unit: 'LS',
+    quantity: 1,
+    benchmarkUnitRate: 48500.0,
+    bidderARawRate: null, // Omitted ($48,500 hidden)
+    bidderBRawRate: 47200.0,
+    bidderCRawRate: 51000.0,
+  },
+  {
+    id: 'boq-10',
+    boqCode: '011401001',
+    itemName: 'Temporary Site Facilities, Hoarding & Traffic Control',
+    unit: 'LS',
+    quantity: 1,
+    benchmarkUnitRate: 88000.0,
+    bidderARawRate: null, // Omitted ($88,000 hidden)
+    bidderBRawRate: 86000.0,
+    bidderCRawRate: 92500.0,
+  },
+  {
+    id: 'boq-11',
+    boqCode: '011502001',
+    itemName: 'HV/LV Switchgear Testing & Power Distribution Tie-In',
+    unit: 'LS',
+    quantity: 1,
+    benchmarkUnitRate: 72000.0,
+    bidderARawRate: 68000.0,
+    bidderBRawRate: 70500.0,
+    bidderCRawRate: 76000.0,
+  },
+  {
+    id: 'boq-12',
+    boqCode: '011601001',
+    itemName: 'Integrated Systems Commissioning & As-Built Dossier',
+    unit: 'LS',
+    quantity: 1,
+    benchmarkUnitRate: 34000.0,
+    bidderARawRate: 31500.0,
+    bidderBRawRate: 33200.0,
+    bidderCRawRate: null, // Omitted ($34,000 hidden)
+  },
+];

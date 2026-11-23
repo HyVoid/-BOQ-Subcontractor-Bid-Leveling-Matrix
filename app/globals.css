@@ -1,0 +1,311 @@
+@import "tailwindcss";
+@import "@fontsource/eb-garamond/latin-500.css";
+@import "@fontsource/eb-garamond/latin-600.css";
+
+:root {
+  /* Core Palette */
+  --bg: #F5F5F2;
+  --surface: #FFFFFF;
+  --brand: #051C2C;
+  --accent: #2251FF;
+  --muted: #888888;
+  --body-text: #1A1A2E;
+
+  /* Semantic (strictly action-required / anomaly states only) */
+  --ok: #00C853;
+  --danger: #D32F2F;
+
+  /* Interactive & Structural Surfaces */
+  --input-bg: #FFFDE7;
+  --border: #E8E8E6;
+  --nav-text-inactive: rgba(5, 28, 44, 0.45);
+  --table-header-bg: rgba(5, 28, 44, 0.04);
+  --table-header-sep: rgba(5, 28, 44, 0.12);
+  --calc-bg: rgba(5, 28, 44, 0.025);
+  --bar-track: rgba(5, 28, 44, 0.10);
+  --insight-bg: rgba(5, 28, 44, 0.04);
+  --anomaly-bg: rgba(211, 47, 47, 0.04);
+  --ok-bg: rgba(0, 200, 83, 0.10);
+  --danger-bg: rgba(211, 47, 47, 0.10);
+  --muted-bg: rgba(5, 28, 44, 0.06);
+  --accent-soft: rgba(34, 81, 255, 0.08);
+  --modal-backdrop: rgba(5, 28, 44, 0.40);
+
+  /* Typography */
+  --font-heading: 'EB Garamond', Garamond, Georgia, serif;
+  --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --tracking-display: -0.03em;
+  --tracking-heading: -0.02em;
+  --tracking-label: 0.06em;
+
+  /* Radius System */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-pill: 100px;
+
+  /* Layered Shadow System (3 tiers + nav) */
+  --shadow-sm:
+    0 1px 2px rgba(5, 28, 44, 0.04),
+    0 2px 8px rgba(5, 28, 44, 0.06);
+  --shadow-md:
+    0 2px 4px rgba(5, 28, 44, 0.04),
+    0 8px 24px rgba(5, 28, 44, 0.08),
+    0 1px 0px rgba(255, 255, 255, 0.6) inset;
+  --shadow-lg:
+    0 4px 8px rgba(5, 28, 44, 0.06),
+    0 16px 48px rgba(5, 28, 44, 0.14),
+    0 1px 0px rgba(255, 255, 255, 0.5) inset;
+  --shadow-nav:
+    0 1px 3px rgba(5, 28, 44, 0.06),
+    0 1px 0px rgba(5, 28, 44, 0.08);
+
+  /* Motion */
+  --ease-standard: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1.0);
+  --ease-decel: cubic-bezier(0.0, 0.0, 0.2, 1.0);
+  --ease-accel: cubic-bezier(0.4, 0.0, 1.0, 1.0);
+  --dur-fast: 150ms;
+  --dur-normal: 220ms;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: var(--bg);
+  color: var(--body-text);
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.55;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.font-editorial {
+  font-family: var(--font-heading);
+}
+
+.tw-page-title {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: var(--tracking-display);
+  color: var(--brand);
+}
+
+.tw-section-title {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: var(--tracking-heading);
+  color: var(--brand);
+}
+
+.tw-kpi-value {
+  font-family: var(--font-heading);
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: var(--tracking-display);
+  color: var(--brand);
+  font-variant-numeric: tabular-nums;
+}
+
+.tw-label-caps {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-label);
+  color: var(--brand);
+}
+
+.tw-nav-bar {
+  height: 56px;
+  background-color: var(--surface);
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow-nav);
+}
+
+.tw-card {
+  background-color: var(--surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  transition:
+    transform var(--dur-normal) var(--ease-spring),
+    box-shadow var(--dur-normal) var(--ease-standard);
+}
+
+.tw-card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.tw-table-container {
+  background-color: var(--surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.tw-table-head {
+  background-color: var(--table-header-bg);
+  color: var(--brand);
+  border-bottom: 2px solid var(--table-header-sep);
+}
+
+.tw-table-head th {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-label);
+  color: var(--brand);
+  padding: 12px 14px;
+  white-space: nowrap;
+}
+
+.tw-table-row {
+  border-bottom: 1px solid var(--border);
+  transition: background-color var(--dur-fast) var(--ease-standard);
+}
+
+.tw-table-row:nth-child(even) {
+  background-color: var(--bg);
+}
+
+.tw-table-row:nth-child(odd) {
+  background-color: var(--surface);
+}
+
+.tw-table-row-anomaly {
+  background-color: var(--anomaly-bg) !important;
+}
+
+.tw-table-row-calc:nth-child(even) {
+  background-color: var(--calc-bg);
+}
+
+.tw-table-row-calc:nth-child(odd) {
+  background-color: var(--surface);
+}
+
+.tw-insight-block {
+  background-color: var(--insight-bg);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.tw-input {
+  background-color: var(--input-bg);
+  color: var(--brand);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  transition:
+    border-color var(--dur-fast) var(--ease-standard),
+    box-shadow var(--dur-fast) var(--ease-standard);
+}
+
+.tw-input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent-soft);
+}
+
+.tw-btn {
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 500;
+  transition:
+    transform var(--dur-fast) var(--ease-standard),
+    background-color var(--dur-fast) var(--ease-standard),
+    color var(--dur-fast) var(--ease-standard),
+    box-shadow var(--dur-fast) var(--ease-standard);
+}
+
+.tw-btn:active {
+  transform: scale(0.97);
+}
+
+.tw-btn-primary {
+  background-color: var(--brand);
+  color: var(--surface);
+}
+
+.tw-btn-primary:hover {
+  background-color: var(--accent);
+}
+
+.tw-btn-secondary {
+  background-color: var(--surface);
+  color: var(--brand);
+  border: 1px solid var(--border);
+}
+
+.tw-btn-secondary:hover {
+  background-color: var(--bg);
+}
+
+.tw-btn-danger {
+  background-color: var(--danger);
+  color: var(--surface);
+}
+
+.tw-btn-danger:hover {
+  filter: brightness(0.92);
+}
+
+.tw-matrix-cell {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-pill);
+  transition:
+    transform var(--dur-fast) var(--ease-spring),
+    filter var(--dur-fast) var(--ease-standard);
+}
+
+.tw-matrix-cell-clickable {
+  cursor: pointer;
+}
+
+.tw-matrix-cell-clickable:hover {
+  transform: scale(1.04);
+  filter: brightness(0.94);
+}
+
+.tw-matrix-cell-clickable:active {
+  transform: scale(0.97);
+}
+
+.tw-modal-backdrop {
+  background-color: var(--modal-backdrop);
+  backdrop-filter: blur(8px);
+}
+
+.tw-modal-surface {
+  background-color: var(--surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
