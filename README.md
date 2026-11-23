@@ -17,7 +17,7 @@ Open the **free browser-based bid leveling tool** right away with zero signup to
 > **Start evaluating subcontractor quotes now:**
 >
 > - [🌐 Launch Free Interactive BOQ Bid Leveling Web Tool (Instant Browser Demo, Zero Signup)](YOUR_HTML_DEMO_URL)
-> - [📥 Get the Reusable Subcontractor Bid Leveling Excel Template (.xlsx, Pre-Built Formulas & Dashboard, 30-Day Refund Guarantee)](YOUR_EXCEL_PURCHASE_OR_RELEASE_URL)
+> - [📥 Get the Reusable Subcontractor Bid Leveling Excel Template (.xlsx, Pre-Built Formulas & Dashboard, 30-Day Refund Guarantee)](https://theseusworkshop.com/l/ticni)
 
 ---
 
@@ -97,7 +97,7 @@ Start with the [free browser-based BOQ bid leveling web tool](YOUR_HTML_DEMO_URL
 
 > **Ready to standardize your subcontract bid evaluations?**
 >
-> - [📥 Download the Reusable BOQ Bid Leveling Excel Workbook (.xlsx, One-Time Purchase, 30-Day Money-Back Guarantee)](YOUR_EXCEL_PURCHASE_OR_RELEASE_URL)
+> - [📥 Download the Reusable BOQ Bid Leveling Excel Workbook (.xlsx, One-Time Purchase, 30-Day Money-Back Guarantee)](https://theseusworkshop.com/l/ticni)
 
 ---
 
