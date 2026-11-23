@@ -16,21 +16,10 @@ Open the **free browser-based bid leveling tool** right away with zero signup to
 
 > **Start evaluating subcontractor quotes now:**
 >
-> - [🌐 Launch Free Interactive BOQ Bid Leveling Web Tool (Instant Browser Demo, Zero Signup)](YOUR_HTML_DEMO_URL)
-> - [📥 Get the Reusable Subcontractor Bid Leveling Excel Template (.xlsx, Pre-Built Formulas & Dashboard, 30-Day Refund Guarantee)](https://theseusworkshop.com/l/ticni)
+> - [🌐 Launch Free Interactive BOQ Bid Leveling Web Tool (Instant Browser Demo, Zero Signup)](https://hyvoid.github.io/construction-bid-leveling-excel-template/)
+> - [📥 Get the Reusable Subcontractor Bid Leveling Excel Template (.xlsx, Pre-Built Formulas & Dashboard, 30-Day Refund Guarantee)](https://theseusworkshop.com/l/ticni?utm_source=github&utm_medium=GitHub%20README)
 
 ---
-
-## Questions, Feedback & Product Updates
-
-This bid leveling tool is designed around practical subcontractor quote comparison, BOQ scope normalization, unit-rate review, and pre-award commercial evaluation. Feedback from estimators, quantity surveyors, procurement teams, and commercial managers helps improve the clarity and reliability of the evaluation workflow.
-
-- **Questions & workflow fit:** [Ask about BOQ inputs, bidder quote mapping, omitted-scope adjustments, normalized totals, unbalanced unit rates, budget variance, or clarification lists](https://github.com/HyVoid/business-decision-toolbox/discussions/categories/questions).
-- **Ideas & improvements:** [Suggest additional tender scenarios, evaluation checks, normalization methods, procurement controls, or reporting outputs](https://github.com/HyVoid/business-decision-toolbox/discussions/categories/ideas).
-- **Report a technical problem:** [Open the construction bid leveling issue form](https://github.com/HyVoid/construction-bid-leveling-excel-template/issues/new?template=bug-report.yml).
-- **Product updates:** [Follow maintenance and improvement notes](https://github.com/HyVoid/business-decision-toolbox/discussions/categories/product-updates).
-
-When describing a problem, identify the affected BOQ item or worksheet, bidder column, input assumption, benchmark threshold, and expected versus actual result. Use synthetic BOQ lines and illustrative rates. Do not upload live tender documents, subcontractor quotations, confidential unit rates, internal cost estimates, client or bidder identities, drawings, contract documents, credentials, or other commercially sensitive project information. GitHub Issues and Discussions are public; use fictional or properly anonymized examples only.
 
 ## What This Construction Bid Leveling Template Tracks (Pain Point to Solution)
 
@@ -44,6 +33,15 @@ The lowest submitted subcontractor price rarely equals the lowest final construc
 | **Project Budget Deviation & Overrun Risk** | Compares every normalized subcontractor total against your **internal benchmark budget** and tolerance limit. | Separate "cheapest bidder in the room" from "financially viable within project budget." |
 | **Slow Manual Tender Clarification** | Consolidates all omitted items and abnormal unit-rate flags into an itemized **pre-award clarification (RFI) list**. | Enter commercial negotiations with a prioritized question list in minutes instead of hours. |
 | **Misleading Award Risk Signals** | Places raw bid totals, normalized totals, omission counts, and pricing warnings side by side on one **bid leveling dashboard**. | Distinguish a genuinely competitive quote from a low-ball bid carrying material commercial risk. |
+
+
+## Spreadsheet Preview
+
+Want to take a closer look before downloading? You can preview the spreadsheet in Google Sheets to explore its layout, structure, and calculation logic.
+
+**[View Spreadsheet Preview on Google Sheets](https://docs.google.com/spreadsheets/d/1MZp-KcN4Z7-nlfqTShr9MCTEwTXcSkkc/edit?usp=sharing&ouid=108770714531989318327&rtpof=true&sd=true)**
+
+> **Note on Compatibility:** The Google Sheets preview may display occasional `#NAME?` errors or formula warnings due to differences between Google Sheets and Microsoft Excel formula compatibility. These are preview-only compatibility issues and do not affect the functionality of the original Excel workbook. For the intended formula behavior and full functionality, please download and open the `.xlsx` file in Microsoft Excel.
 
 ---
 
@@ -97,7 +95,7 @@ All calculations refresh automatically to show:
 
 ### 4. Move From Free Browser Testing to Repeat Tender Workflows in Excel
 
-Start with the [free browser-based BOQ bid leveling web tool](YOUR_HTML_DEMO_URL) to test the methodology on a sample quote right now. Once you see how it works, upgrade to the [paid offline Excel Bid Leveling Workbook (.xlsx)](YOUR_EXCEL_PURCHASE_OR_RELEASE_URL) for real project tenders.
+Start with the [free browser-based BOQ bid leveling web tool](https://hyvoid.github.io/construction-bid-leveling-excel-template/) to test the methodology on a sample quote right now. Once you see how it works, upgrade to the [paid offline Excel Bid Leveling Workbook (.xlsx)](https://theseusworkshop.com/l/ticni?utm_source=github&utm_medium=GitHub%20README) for real project tenders.
 
 **Why procurement teams switch to the offline Excel workbook after their first test:**
 
@@ -108,7 +106,7 @@ Start with the [free browser-based BOQ bid leveling web tool](YOUR_HTML_DEMO_URL
 
 > **Ready to standardize your subcontract bid evaluations?**
 >
-> - [📥 Download the Reusable BOQ Bid Leveling Excel Workbook (.xlsx, One-Time Purchase, 30-Day Money-Back Guarantee)](https://theseusworkshop.com/l/ticni)
+> - [📥 Download the Reusable BOQ Bid Leveling Excel Workbook (.xlsx, One-Time Purchase, 30-Day Money-Back Guarantee)](https://theseusworkshop.com/l/ticni?utm_source=github&utm_medium=GitHub%20README)
 
 ---
 
@@ -776,8 +774,6 @@ This separates exception review from the full calculation table.
 
 </details>
 
-</details>
-
 
 ### Validation Rules
 
@@ -856,8 +852,12 @@ Final commercial decisions should consider scope compliance, construction method
 
 Explore more lightweight construction and commercial decision-support tools:
 
-- [Construction Estimating & Cost Control Tools](https://github.com/HyVoid) — BOQ estimation, project costing, and budget control.
-- [Theseus Workshop](https://github.com/HyVoid) — Practical Excel-based operational and financial decision frameworks.
+- [Construction Estimating](https://github.com/HyVoid/construction-estimating) — Standardize construction tender estimating and transform completed estimates into reusable cost libraries.
+- [AIA Construction Estimating Cost Tracking Workbook](https://github.com/HyVoid/aia-construction-cost-tracker-excel) — Compare construction estimates against actual costs throughout project delivery using AIA-standard formats.
+- [Construction Project Management Excel](https://github.com/HyVoid/construction-project-management-excel) — Integrate budgets, change orders, progress billing, and cash flow into a single construction project control framework.
+- [Residential BOQ Template](https://github.com/HyVoid/residential-boq-template) — Estimate residential construction costs from BOQ takeoffs and rates while tracking approved budgets against actual spending.
+- [Tunnel Drill and Blast Cost Estimation BOQ Engine](https://github.com/HyVoid/tunnel-cost-estimator-boq-excel) — Estimate drill-and-blast tunnel excavation, drilling, blasting, support, equipment, and labour requirements into a complete project cost and BOQ.
+- [DIN 743 Shaft Calculations](https://github.com/HyVoid/DIN-743-Shaft-Calculations) — Apply DIN 743 shaft calculation standards to engineering design decisions.
 
 ## License
 
