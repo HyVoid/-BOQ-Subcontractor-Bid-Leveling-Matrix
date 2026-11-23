@@ -1,0 +1,112 @@
+name: "Bid Leveling Workbook / Tool Issue"
+description: "Report a reproducible BOQ mapping, bid normalization, unit-rate check, calculation, compatibility, or documentation problem."
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form only for a reproducible technical problem. For workflow questions or feature suggestions, use the [Theseus Workshop Discussions](https://github.com/HyVoid/business-decision-toolbox/discussions) instead.
+
+        Do not upload live tender documents, subcontractor quotations, confidential unit rates, internal cost estimates, client or bidder identities, drawings, contracts, credentials, or other commercially sensitive project information. GitHub Issues are public. Use fictional or properly anonymized BOQ items, bidder labels, quantities, and rates.
+
+  - type: dropdown
+    id: problem_area
+    attributes:
+      label: Which bid evaluation area is affected?
+      options:
+        - "BOQ item mapping / inconsistent quote formats"
+        - "Missing scope / blank or zero-priced BOQ items"
+        - "Plug rate method / omission adjustment"
+        - "Normalized bid total / bidder ranking"
+        - "Unbalanced or front-loaded unit-rate detection"
+        - "Internal benchmark rate / deviation threshold"
+        - "Project budget variance / tolerance"
+        - "Pre-award clarification / RFI list"
+        - "Dashboard totals / risk flags"
+        - "Browser tool behaviour"
+        - "Excel formula / calculation issue"
+        - "Compatibility / documentation"
+        - "Other"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Where did this happen?
+      options:
+        - "Microsoft Excel for Windows"
+        - "Microsoft Excel for Mac"
+        - "Excel for the web"
+        - "Free browser bid leveling tool"
+        - "Google Sheets preview"
+        - "Other / not sure"
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Excel version or browser/tool version
+      description: Optional. Include the Excel build or browser and the date tested, if known.
+      placeholder: "Microsoft 365 desktop, Excel 2024, or browser and test date"
+    validations:
+      required: false
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Identify the affected BOQ item, bidder label, worksheet, input, threshold, or dashboard output. Do not include real bidder or project details.
+      placeholder: "For synthetic BOQ item B-014, bidder B has a blank rate, but..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_result
+    attributes:
+      label: What did you expect to happen?
+      placeholder: "I expected the omitted item to be normalized using the configured rule..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual_result
+    attributes:
+      label: What happened instead?
+      description: Include the displayed amount, ranking, warning, or error message using illustrative values only.
+      placeholder: "Instead, the normalized total / flag shows..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction_steps
+    attributes:
+      label: Steps to reproduce
+      description: List the smallest repeatable sequence using a synthetic tender and fictitious bidder labels.
+      placeholder: |
+        1. Open the workbook or browser tool...
+        2. Enter a small synthetic BOQ and three illustrative bidder rates...
+        3. Set the plug-rate / deviation threshold...
+        4. Review the normalized total or risk flag...
+    validations:
+      required: false
+
+  - type: textarea
+    id: safe_example
+    attributes:
+      label: Synthetic BOQ example / affected cell
+      description: Optional. Use fictitious item codes, bidder labels, quantities, and rates. Do not paste live tender data or attach original quote files.
+      placeholder: "BOQ item: DEMO-01 | Quantity: 10 | Bidder A rate: 100 | Expected normalized result: ..."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: privacy_check
+    attributes:
+      label: Public issue and data-safety confirmation
+      options:
+        - label: I have used fictional or properly anonymized examples and removed client/bidder identities, live tender prices, internal estimates, drawings, contract details, credentials, and confidential project information.
+          required: true
+        - label: I understand this is a public GitHub issue, not a private procurement or tender support channel.
+          required: true
