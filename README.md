@@ -21,6 +21,17 @@ Open the **free browser-based bid leveling tool** right away with zero signup to
 
 ---
 
+## Questions, Feedback & Product Updates
+
+This bid leveling tool is designed around practical subcontractor quote comparison, BOQ scope normalization, unit-rate review, and pre-award commercial evaluation. Feedback from estimators, quantity surveyors, procurement teams, and commercial managers helps improve the clarity and reliability of the evaluation workflow.
+
+- **Questions & workflow fit:** [Ask about BOQ inputs, bidder quote mapping, omitted-scope adjustments, normalized totals, unbalanced unit rates, budget variance, or clarification lists](https://github.com/HyVoid/business-decision-toolbox/discussions/categories/questions).
+- **Ideas & improvements:** [Suggest additional tender scenarios, evaluation checks, normalization methods, procurement controls, or reporting outputs](https://github.com/HyVoid/business-decision-toolbox/discussions/categories/ideas).
+- **Report a technical problem:** [Open the construction bid leveling issue form](https://github.com/HyVoid/construction-bid-leveling-excel-template/issues/new?template=bug-report.yml).
+- **Product updates:** [Follow maintenance and improvement notes](https://github.com/HyVoid/business-decision-toolbox/discussions/categories/product-updates).
+
+When describing a problem, identify the affected BOQ item or worksheet, bidder column, input assumption, benchmark threshold, and expected versus actual result. Use synthetic BOQ lines and illustrative rates. Do not upload live tender documents, subcontractor quotations, confidential unit rates, internal cost estimates, client or bidder identities, drawings, contract documents, credentials, or other commercially sensitive project information. GitHub Issues and Discussions are public; use fictional or properly anonymized examples only.
+
 ## What This Construction Bid Leveling Template Tracks (Pain Point to Solution)
 
 The lowest submitted subcontractor price rarely equals the lowest final construction cost. This bid leveling sheet maps common tender review blind spots directly to automated commercial checks:
